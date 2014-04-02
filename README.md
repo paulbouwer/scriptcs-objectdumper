@@ -3,7 +3,7 @@ scriptcs-objectdumper
 
 # About #
 
-This [Script Pack](https://github.com/scriptcs/scriptcs/wiki) for [scriptcs](http://scriptcs.net/) provides provides object dumper behaviour.
+This [Script Pack](https://github.com/scriptcs/scriptcs/wiki) for [scriptcs](http://scriptcs.net/) provides object dumper behaviour.
 
 This script pack allows the structure of objects to be dumped from within the REPL or scripts. It utilises JSON.Net for serialisation. A number of options are provided:
 
@@ -20,7 +20,7 @@ Install the nuget package by running
 
 # Usage #
 
-Obtain a reference to the Script Pack and configure using one ore more build methods. Finally call Build() to construct the dumper.
+Obtain a reference to the Script Pack and configure using one or more build methods. Finally call Build() to construct the dumper.
 
     var dumper = Require<ObjectDumper>()
 		.Compact()
@@ -60,7 +60,7 @@ The following object will be used to demonstrate the build methods:
 
 ## Object References ##
 
-You can include or exclude object references. The serialiser used (JSON.NET) can add references when the same object is referred to within the object being dumped.
+You can include or exclude object references. The serialiser (JSON.NET) used can add references when the same object is referenced multiple times within the object being dumped.
 
 **IncludeObjectReferences()**
 
@@ -108,7 +108,7 @@ Results in the following:
 
 You can format the dumped output as pretty printed or compact. Here is what that looks like:
 
-** PrettyPrint() **
+**PrettyPrint()**
 
 	var dumper = Require<ObjectDumper>()
 	  .PrettyPrint()
@@ -129,10 +129,10 @@ Results in the following:
 	  }
 	}
 	
-** Compact() **
+**Compact()**
 
 	var dumper = Require<ObjectDumper>()
-	  .PrettyPrint()
+	  .Compact()
 	  .Build();
 
 Results in the following:
@@ -143,7 +143,7 @@ Results in the following:
 
 You can also include or exclude null values from the dumped object. Here is what that looks like:
 
-** IncludeNullValues() **
+**IncludeNullValues()**
 
 	var dumper = Require<ObjectDumper>()
 	  .IncludeNullValues()
@@ -164,7 +164,7 @@ Results in the following:
 	  }
 	}
 
-** ExcludeNullValues() **
+**ExcludeNullValues()**
 
 	var dumper = Require<ObjectDumper>()
 	  .ExcludeNullValues()
