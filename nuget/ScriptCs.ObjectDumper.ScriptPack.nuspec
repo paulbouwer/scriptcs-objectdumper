@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>ScriptCs.ObjectDumper.ScriptPack</id>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <authors>Paul Bouwer</authors>
     <owners>Paul Bouwer</owners>
     <licenseUrl>https://github.com/paulbouwer/scriptcs-objectdumper/blob/master/LICENSE</licenseUrl>
@@ -18,7 +18,7 @@
     <copyright>Copyright (c) Paul Bouwer (@pbouwer)</copyright>
     <tags>debugging csx scriptcs</tags>
     <dependencies>
-      <dependency id="ScriptCs.Contracts" version="0.8.1" />
+      <dependency id="ScriptCs.Contracts" version="0.9.0" />
       <dependency id="Newtonsoft.Json" version="6.0.1" />
     </dependencies>
   </metadata>
